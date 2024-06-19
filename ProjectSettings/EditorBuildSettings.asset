@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Static-Lighting.unity
+    guid: 027b6aa0c6c4e4784b897faad3f467e0
+  - enabled: 1
+    path: Assets/Scenes/Plank.unity
+    guid: c68d6010e4d964323a9d4874869f3dc0
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: fb65f82f74be24148aa9e4b4dfc77eec, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: bd04518b03ea7461bb83c31ac6a63eb0, type: 2}
