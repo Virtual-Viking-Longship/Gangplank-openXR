@@ -138,14 +138,41 @@ public class FormattedDocumentDisplay : MonoBehaviour
         }
     }
 
+    //private void DisplayImage(String param)
+    //{
+    //    String imgPath = param.Split('(', ')')[1].Trim();
+    //    GameObject block = Instantiate(imageBlock, verticalLayout);
+    //    block.SetActive(true);
+    //    Sprite image = Resources.Load<Sprite>(imgPath);
+    //    StartCoroutine(PlaceImageBlock(block, image));
+    //}
     private void DisplayImage(String param)
     {
+        Debug.Log("DisplayImage called with param: " + param);
+
         String imgPath = param.Split('(', ')')[1].Trim();
+        Debug.Log("Extracted imgPath: " + imgPath);
+
         GameObject block = Instantiate(imageBlock, verticalLayout);
+        Debug.Log("Instantiated image block");
+
         block.SetActive(true);
+        Debug.Log("Set image block active");
+
         Sprite image = Resources.Load<Sprite>(imgPath);
+        if (image != null)
+        {
+            Debug.Log("Loaded image successfully from path: " + imgPath);
+        }
+        else
+        {
+            Debug.LogError("Failed to load image from path: " + imgPath);
+        }
+
         StartCoroutine(PlaceImageBlock(block, image));
+        Debug.Log("Started coroutine to place image block");
     }
+
 
     // In order to get the width of the image inside the vertical layout, we need to wait one frame for it to update
     private IEnumerator PlaceImageBlock(GameObject block, Sprite image)
@@ -170,6 +197,7 @@ public class FormattedDocumentDisplay : MonoBehaviour
 
     private void DisplayLink(String param)
     {
+        Debug.Log("in DisplayLink");
         GameObject block = Instantiate(linkBlock, verticalLayout);
         block.gameObject.SetActive(true);
         string[] parameters = param.Split('(', ')')[1].Split(',');

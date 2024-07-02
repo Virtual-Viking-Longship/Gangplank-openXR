@@ -2854,6 +2854,10 @@ PrefabInstance:
       propertyPath: m_Target
       value: 
       objectReference: {fileID: 1797055220}
+    - target: {fileID: 6767725771090097989, guid: ecfc0e7f7edf5c24bbb20b7856f5fdd0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6985478378111158122, guid: ecfc0e7f7edf5c24bbb20b7856f5fdd0, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -2954,6 +2958,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8854163485662824712, guid: ecfc0e7f7edf5c24bbb20b7856f5fdd0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8886122039783782070, guid: ecfc0e7f7edf5c24bbb20b7856f5fdd0, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2977,6 +2985,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7685163417302894242, guid: ecfc0e7f7edf5c24bbb20b7856f5fdd0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1905691045}
+    - targetCorrespondingSourceObject: {fileID: 7685163417302894242, guid: ecfc0e7f7edf5c24bbb20b7856f5fdd0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1905691048}
   m_SourcePrefab: {fileID: 100100000, guid: ecfc0e7f7edf5c24bbb20b7856f5fdd0, type: 3}
 --- !u!224 &1905691042 stripped
 RectTransform:
@@ -3018,6 +3029,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   webBrowserButtons: {fileID: 1905691045}
+--- !u!65 &1905691048
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905691043}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 480, y: 280, z: 28}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2071065251
 GameObject:
   m_ObjectHideFlags: 0

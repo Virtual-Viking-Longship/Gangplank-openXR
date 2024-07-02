@@ -2,13 +2,13 @@ $T(14,b,c)
 _gangplank_ (English); _landgangsbro_ (Danish); _Laufplanke_ (German)
  
 _bryggja f., pl. bryggjur_ (Old Norse), citations:
-$L([link: prose], 14, l. https://onp.ku.dk/onp/onp.php?o11700)
-$L([link: poetry], 14, l. https://lexiconpoeticum.org/m.php?p=lemma&i=11326) 
+$L([link: prose], 14, l, https://onp.ku.dk/onp/onp.php?o11700)
+$L([link: poetry], 14, l, https://lexiconpoeticum.org/m.php?p=lemma&i=11326) 
  
 $T(12,b,l)
 A long, narrow plank of wood used as a movable bridge to board a ship or go ashore. 
  
- 
+$I(Images/Plank)
 $T(12,i,c)  
 Gangplank from the Gokstad ship (Nicolaysen Pl. VI, Fig. 17)
  
