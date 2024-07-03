@@ -17,6 +17,7 @@ public class PlankInspector : MonoBehaviour
 {
     public void SendInfoPanel()
     {
+        Debug.Log("plank inspector called");
         Transform infoPanel = GameObject.Find("Info Panel").transform;
         Transform goal = gameObject.transform;
         TextAsset document = Resources.Load<TextAsset>(goal.name);

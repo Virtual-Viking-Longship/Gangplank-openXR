@@ -37,7 +37,7 @@ public class FormattedDocumentDisplay : MonoBehaviour
         List<String> lines = new List<String>(document.text.Split('\n'));
         for (int i = 0; i < lines.Count; i++)
         {
-            if (lines[i][0] == '$')
+            if (lines[i].Length > 0 && lines[i][0] == '$')
             {
                 switch (lines[i][1])
                 {

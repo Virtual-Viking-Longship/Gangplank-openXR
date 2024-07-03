@@ -20,4 +20,5 @@ Gangplanks were vital pieces of equipment in the Viking Age, when ships rarely d
 $T(10,i,c)
 Nicolaysen, N. _Langskibet fra Gokstad ved Sandefjord_. Kristiania: Alb. Cammermeyer, 1882.
  
-Br?gger, A. W., Hjalmar Falk, and Haakon Shetelig. Osebergfundet. 1. Kristiania: Universitetets Oldsaksamling, 1917. https://urn.nb.no/URN:NBN:no-nb_digibok_2019111248002.
+Br?gger, A. W., Hjalmar Falk, and Haakon Shetelig. Osebergfundet. 1. Kristiania: Universitetets Oldsaksamling, 1917. 
+$L([link: https://urn.nb.no/URN:NBN:no-nb_digibok_2019111248002.], 14, l, https://urn.nb.no/URN:NBN:no-nb_digibok_2019111248002.)
