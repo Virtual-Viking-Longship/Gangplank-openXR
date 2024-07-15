@@ -30,6 +30,6 @@ public class PlankInspector : MonoBehaviour
         infoPanel.GetComponent<CanvasGroup>().blocksRaycasts = true;
         infoPanel.GetChild(0).GetChild(0).GetComponent<BoxCollider>().enabled = true;
 
-        infoPanel.GetComponentInChildren<FormattedDocumentDisplay>().DisplayDocument(document);
+        // infoPanel.GetComponentInChildren<FormattedDocumentDisplay>().DisplayDocument(document);
     }
 }

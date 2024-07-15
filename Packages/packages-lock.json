@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "com.dbrizov.naughtyattributes": {
+      "version": "https://github.com/dbrizov/NaughtyAttributes.git#upm",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "8a8fa5a9659a6d63f196391c71e06c4286c8acd7"
+    },
+    "com.jimmycushnie.jimmysunityutilities": {
+      "version": "https://github.com/JimmyCushnie/JimmysUnityUtilities.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "688a45c7aeb110f26de3701f2c9f4ce2f87ed01f"
+    },
     "com.unity.collab-proxy": {
       "version": "2.3.1",
       "depth": 0,

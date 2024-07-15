@@ -1,24 +1,20 @@
-$T(14,b,c)
-_gangplank_ (English); _landgangsbro_ (Danish); _Laufplanke_ (German)
- 
-_bryggja f., pl. bryggjur_ (Old Norse), citations:
-$L([link: prose], 14, l, https://onp.ku.dk/onp/onp.php?o11700)
-$L([link: poetry], 14, l, https://lexiconpoeticum.org/m.php?p=lemma&i=11326) 
- 
-$T(12,b,l)
-A long, narrow plank of wood used as a movable bridge to board a ship or go ashore. 
- 
-$I(Images/Plank)
-$T(12,i,c)  
-Gangplank from the Gokstad ship (Nicolaysen Pl. VI, Fig. 17)
- 
-$T(12,n,j)
-Gangplanks were vital pieces of equipment in the Viking Age, when ships rarely docked at fixed piers. They could be used to enter, exit and load ships from land, or to board other ships at sea by laying the plank across the gunwales. The Gokstad and Oseberg ship burials both included a _bryggja_ which was hewn from a single piece of pine, recessed on one side so that steps are carved in relief, and fitted with a hole at one end so that it could be fixed to the ship when in use (Nicolaysen, 52; Br?gger et al., 320).
- 
+***gangplank*** (English); *landgangsbro* (Danish); *Laufplanke* (German)
+
+***bryggja** f., pl. bryggjur* (Old Norse) citations: [prose](https://onp.ku.dk/onp/onp.php?o11700)/[poetry](https://lexiconpoeticum.org/m.php?p=lemma&i=11326)
+
+  A long, narrow plank of wood used as a movable bridge to board a ship or go ashore. 
+
+<div align="center">
+  
+  ![gangplank from Gokstad ship](../images/Gangplank_Gokstad.png)
+  Gangplank from the Gokstad ship (Nicolaysen Pl. VI, Fig. 17)
+
+</div>
+
+Gangplanks were vital pieces of equipment in the Viking Age, when ships rarely docked at fixed piers. They could be used to enter, exit and load ships from land, or to board other ships at sea by laying the plank across the gunwales. The Gokstad and Oseberg ship burials both included a *bryggja* which was hewn from a single piece of pine, recessed on one side so that steps are carved in relief, and fitted with a hole at one end so that it could be fixed to the ship when in use (Nicolaysen, 52; Brøgger et al., 320).
+
 ---
- 
-$T(10,i,c)
-Nicolaysen, N. _Langskibet fra Gokstad ved Sandefjord_. Kristiania: Alb. Cammermeyer, 1882.
- 
-Br?gger, A. W., Hjalmar Falk, and Haakon Shetelig. Osebergfundet. 1. Kristiania: Universitetets Oldsaksamling, 1917. 
-$L([link: https://urn.nb.no/URN:NBN:no-nb_digibok_2019111248002.], 14, l, https://urn.nb.no/URN:NBN:no-nb_digibok_2019111248002.)
+
+  Nicolaysen, N. *Langskibet fra Gokstad ved Sandefjord*. Kristiania: Alb. Cammermeyer, 1882.
+
+  Brøgger, A. W., Hjalmar Falk, and Haakon Shetelig. Osebergfundet. 1. Kristiania: Universitetets Oldsaksamling, 1917. https://urn.nb.no/URN:NBN:no-nb_digibok_2019111248002.

@@ -21,23 +21,20 @@ public class ObjectInspector : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("in start");
         leftInput.action.started += Inspect;
         rightInput.action.started += Inspect;
     }
 
     void Inspect(InputAction.CallbackContext ctx)
     {
-        Debug.Log("in inspect");
         if (left.interactablesHovered.Count > 0) SendInfoPanel(left.interactablesHovered[0].transform);
         if (right.interactablesHovered.Count > 0) SendInfoPanel(right.interactablesHovered[0].transform);
     }
 
     private void SendInfoPanel(Transform goal)
     {
-        Debug.Log("in sendinfopanel");
         TextAsset document = Resources.Load<TextAsset>(goal.name);
-        Debug.Log("goal.name = " + goal.name);
+        // Debug.Log("goal.name = " + goal.name);
         if (document == null) return;
 
         infoPanel.GetComponent<LazyFollow>().target = goal;
@@ -47,7 +44,7 @@ public class ObjectInspector : MonoBehaviour
         infoPanel.GetComponent<CanvasGroup>().interactable = true;
         infoPanel.GetComponent<CanvasGroup>().blocksRaycasts = true;
         infoPanel.GetChild(0).GetChild(0).GetComponent<BoxCollider>().enabled = true;
-
-        infoPanel.GetComponentInChildren<FormattedDocumentDisplay>().DisplayDocument(document);
+        Debug.Log("hello");
+        infoPanel.GetComponentInChildren<FormattedDocumentDisplay>().DisplayDocument(document, goal.name);
     }
 }
