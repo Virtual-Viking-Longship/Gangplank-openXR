@@ -37,6 +37,8 @@ public class FormattedDocumentDisplay : MonoBehaviour
         foreach (Transform child in verticalLayout) Destroy(child.gameObject);
 
         string fileContents = document.text;
+        fileContents = System.Text.RegularExpressions.Regex.Replace(fileContents, @"<\/?div(.*?)>\s*\n\s*", "");
+        fileContents = System.Text.RegularExpressions.Regex.Replace(fileContents, @"  ", "");
         var regex = new System.Text.RegularExpressions.Regex(@"!\[(.*?)\]\((.*?)\)");
         var matches = regex.Matches(fileContents);
         var match = matches[0];
