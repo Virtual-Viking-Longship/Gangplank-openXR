@@ -32,25 +32,36 @@ public class FormattedDocumentDisplay : MonoBehaviour
     }
 
     // This function is called by the ObjectInspector class
-    public void DisplayDocument(TextAsset document, string fileName)
+    public void DisplayDocument(TextAsset document)
     {
+        
         foreach (Transform child in verticalLayout) Destroy(child.gameObject);
-
+        
         string fileContents = document.text;
+
+        //to fix formatting that makes .md look good in the git repo
         fileContents = System.Text.RegularExpressions.Regex.Replace(fileContents, @"<\/?div(.*?)>\s*\n\s*", "");
         fileContents = System.Text.RegularExpressions.Regex.Replace(fileContents, @"  ", "");
+
+        //finds the line with the image file information
         var regex = new System.Text.RegularExpressions.Regex(@"!\[(.*?)\]\((.*?)\)");
         var matches = regex.Matches(fileContents);
-        var match = matches[0];
-        var imgPath = match.Groups[2].Value;        //extracts the actual image path from the regex match: the part in ()
-        int startIndex = match.Index;
-        int endIndex = match.Length + startIndex;
 
-        displayText(fileContents.Substring(0, startIndex));
-        DisplayImage(imgPath);
-        displayText(fileContents.Substring(endIndex));   
+        //if there is an image
+        //needs to be modified to a loop if there will be more than one image
+        if (matches.Count > 0) {
+            var match = matches[0];
+            var imgPath = match.Groups[2].Value;        //extracts the actual image path from the regex match: the part in ()
+            int startIndex = match.Index;
+            int endIndex = match.Length + startIndex;
+
+            displayText(fileContents.Substring(0, startIndex));
+            DisplayImage(imgPath);
+            displayText(fileContents.Substring(endIndex));
+        } else {
+            displayText(fileContents);
+        }
     }
-
     private void displayText(string text) {
         TextMeshProUGUI block = Instantiate(textBlock, verticalLayout).GetComponent<TextMeshProUGUI>();
         block.gameObject.SetActive(true);

@@ -34,17 +34,14 @@ public class ObjectInspector : MonoBehaviour
     private void SendInfoPanel(Transform goal)
     {
         TextAsset document = Resources.Load<TextAsset>(goal.name);
-        // Debug.Log("goal.name = " + goal.name);
         if (document == null) return;
 
         infoPanel.GetComponent<LazyFollow>().target = goal;
-        //infoPanel.transform.parent = goal;
         infoPanel.transform.position = goal.position + Vector3.up * 0.5f;
         infoPanel.GetComponent<CanvasGroup>().alpha = 1;
         infoPanel.GetComponent<CanvasGroup>().interactable = true;
         infoPanel.GetComponent<CanvasGroup>().blocksRaycasts = true;
         infoPanel.GetChild(0).GetChild(0).GetComponent<BoxCollider>().enabled = true;
-        Debug.Log("hello");
-        infoPanel.GetComponentInChildren<FormattedDocumentDisplay>().DisplayDocument(document, goal.name);
+        infoPanel.GetComponentInChildren<FormattedDocumentDisplay>().DisplayDocument(document);
     }
 }
